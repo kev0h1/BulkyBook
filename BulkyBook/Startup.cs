@@ -58,6 +58,7 @@ namespace BulkyBook
 
             app.UseAuthentication();
             app.UseAuthorization();
+            //ignore this comment
 
             app.UseEndpoints(endpoints =>
             {
