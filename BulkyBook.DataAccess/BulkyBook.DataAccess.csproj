@@ -5,13 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.9" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.10" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+    <Compile Remove="Migrations\20210102152554_AddDefaultIdentityMigration.cs" />
+    <Compile Remove="Migrations\20210102152554_AddDefaultIdentityMigration.Designer.cs" />
+    <Compile Remove="Migrations\20210115145709_coverTypeDb.cs" />
+    <Compile Remove="Migrations\20210115145709_coverTypeDb.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Migrations\" />
+    <PackageReference Include="Dapper" Version="2.0.78" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
   </ItemGroup>
 
   <ItemGroup>

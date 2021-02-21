@@ -1,0 +1,14 @@
+﻿<div class="row">
+    <div class="col">
+        @*submit triggers a post event*@
+        <button type="submit" class="btn btn-primary form-control">
+            Create
+        </button>
+    </div>
+    <div class="col">
+        @*we do not need to specify an index action as it will look within its controller*@
+        <a asp-action="Index" class="btn btn-success form-control">
+            Back To List
+        </a>
+    </div>
+</div>
